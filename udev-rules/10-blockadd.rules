@@ -1,0 +1,2 @@
+SUBSYSTEM=="block", RUN+="/usr/local/bin/thecus_block_event.sh"
+
