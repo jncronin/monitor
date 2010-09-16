@@ -85,6 +85,7 @@ int write_message(int fd, char *l1, char *l2)
 
 	msg = make_strout_message(l1, l2, &msg_len);
 	write(fd, msg, msg_len);
+	free(msg);
 	return 0;
 }
 

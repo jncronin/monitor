@@ -1,9 +1,9 @@
 all: monitor
 
-CFLAGS = -g
+CFLAGS = -g -Wall 
 
 %.o: %.c
-	$(CC) -Wall -c -o $@ $< $(CFLAGS)
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 monitor_OBJ = monitor.o string_out.o packet.o raid_monitor.o fifo_interface.o device_db.o util.o serial_interface.o readopt.o options.o
 
